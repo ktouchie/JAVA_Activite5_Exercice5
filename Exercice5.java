@@ -7,12 +7,9 @@ class Exercice5 {
         boolean order = true;
         
         for (int i=0; i<(a.length-1); i++) {
-            while (order==true) {
-                if (a[i+1]>=a[i]) {
-                    order = true;
-                } else {
-                order = false;
-                }
+            if (a[i+1]>=a[i]) {
+            order = false;
+            break;
             }
         }
         System.out.println(order);
